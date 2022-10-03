@@ -1,0 +1,147 @@
+body {
+  background-image: linear-gradient(
+    rgba(255, 30, 188, 0.218),
+    rgb(20, 220, 113)
+  );
+}
+
+#header {
+  background-color: rgb(20, 220, 113);
+  text-decoration: underline;
+  text-align: center;
+}
+
+#footer {
+  background-color: rgb(20, 220, 113);
+  text-decoration: underline;
+  text-align: center;
+}
+
+#contact {
+  color: #252525;
+  background-color: var(--text-accent-color);
+  padding-block: 5rem;
+  padding-inline: 2rem;
+  box-shadow: 0 54px 55px rgb(0 0 0 / 25%), 0 -12px 30px rgb(0 0 0 / 12%),
+    0 4px 6px rgb(0 0 0 / 12%), 0 12px 13px rgb(0 0 0 / 17%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  margin-block: 1rem;
+}
+
+.input-field {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.long {
+  width: calc(300px * 2 + 2rem);
+}
+
+.radio-field,
+.checkbox-field {
+  display: flex;
+  gap: 2rem;
+}
+
+.radio-option,
+.checkbox-option {
+  display: flex;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #252525;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  font-size: 0.9rem;
+  color: #252525;
+}
+
+.required-field {
+  color: red;
+  margin-right: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+button {
+  background-color: var(--main-bg-color);
+  text-align: center;
+  border: none;
+  flex: none;
+  width: 100px;
+  text-decoration: none;
+  color: var(--main-text-color);
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+button[type="reset"] {
+  background-color: var(--main-text-color);
+  color: #252525;
+}
+
+button:hover {
+  box-shadow: 0 5px 5px rgb(0 0 0 / 25%), 0 -5px 5px rgb(0 0 0 / 12%),
+    0 4px 6px rgb(0 0 0 / 12%), 0 5px 7px rgb(0 0 0 / 17%);
+  cursor: pointer;
+}
+
+button[type="reset"]:hover {
+  box-shadow: 0 5px 5px rgb(255 255 255 / 25%),
+    0 -5px 5px rgb(255 255 255 / 12%), 0 4px 6px rgb(255 255 255 / 12%),
+    0 5px 7px rgb(255 255 255 / 17%);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 180px;
+  font-family: "Mulish", sans-serif;
+}
+
+@media (max-width: 480px) {
+  .row {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .input-field {
+    width: 100%;
+  }
+  .long {
+    width: 100%;
+  }
+}

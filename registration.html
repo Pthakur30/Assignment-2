@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTRATION</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1>CREATE AN ACCOUNT</h1>
+    </header>
+
+    <div class="container text-center">
+      <div class="row g-3">
+        <div class="col-4">
+          <div class="p-3"></div>
+        </div>
+        <div class="col-4">
+          <div class="p-3">
+            <img src="/logo.jpg" width="80%" />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="p-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <h3>
+      --------------------------------------------------------Personal
+      Information--------------------------------------------------------
+    </h3>
+    <section id="contact">
+      <form
+        class="contact-form"
+        action="https://httpbin.org/post"
+        method="post"
+      >
+        <div class="row">
+          <div class="input-field">
+            <label for="name"
+              ><span class="required-field">*</span>First Name</label
+            >
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="input-field">
+            <label for="name"
+              ><span class="required-field">*</span>Last Name</label
+            >
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="input-field">
+            <label for="email"
+              ><span class="required-field">*</span>Email</label
+            >
+            <input type="email" name="email" id="email" required />
+            <label for="email"
+              ><span class="required-field">*</span>Phone Number</label
+            >
+            <input type="phone" name="phone" id="phone" required />
+          </div>
+        </div>
+      </form>
+    </section>
+    <br />
+    <br />
+    <br />
+
+    <h3>
+      --------------------------------------------------------Billing
+      Information---------------------------------------------------------
+    </h3>
+    <br />
+    <br />
+    <br />
+    <section id="contact">
+      <form
+        class="contact-form"
+        action="https://httpbin.org/post"
+        method="post"
+      >
+        <div class="row">
+          <div class="input-field long">
+            <label for="address"
+              ><span class="required-field">*</span>Street Address</label
+            >
+            <input type="text" name="address" id="address" required />
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field">
+            <label for="city"><span class="required-field">*</span>City</label>
+            <input list="cities-choices" id="city" name="city" />
+            <datalist id="cities-choices">
+              <option value="Toronto"></option>
+              <option value="Montreal"></option>
+              <option value="Vancouver"></option>
+              <option value="Calgary"></option>
+              <option value="Edmonton"></option>
+              <option value="Ottawa"></option>
+              <option value="Halifax"></option>
+              <option value="Quebec"></option>
+              <option value="Winnipeg"></option>
+              <option value="Victoria"></option>
+            </datalist>
+          </div>
+          <div class="input-field">
+            <label for="postal"
+              ><span class="required-field">*</span>Postal Code</label
+            >
+            <input
+              type="text"
+              name="postal"
+              id="postal"
+              placeholder="A1A 1A1"
+              pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="checkbox-option">
+            <input type="checkbox" id="checkbox" name="within-canada" checked />
+            <label for="checkbox">I am currently within Canada</label>
+          </div>
+        </div>
+      </form>
+    </section>
+    <br />
+    <br />
+    <br />
+
+    <h3>
+      ----------------------------------------------------------Account
+      Security---------------------------------------------------------
+    </h3>
+    <br />
+
+    <div class="container overflow-hidden text-center">
+      <div class="row gy-5">
+        <div class="col-6">
+          <div class="p-3">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="p-3">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3>
+      --------------------------------------------------------------------------------------------------------------------------------------
+    </h3>
+    <div class="container text-center">
+      <div class="row g-3">
+        <div class="col-4">
+          <div class="p-3"></div>
+        </div>
+        <div class="col-4">
+          <div class="p-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="p-3"></div>
+        </div>
+      </div>
+    </div>
+    <h3>
+      --------------------------------------------------------------------------------------------------------------------------------------
+    </h3>
+
+    <footer id="footer">
+      Already a client? <a href="./login.html">Login</a>
+    </footer>
+  </body>
+</html>
